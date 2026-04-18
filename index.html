@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Eye</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#070812;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* LOGO */
+.fresh{color:#00f7ff; font-weight:bold; font-size:30px;}
+.eye{color:#b400ff; font-weight:bold; font-size:30px;}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:15px;
+    background:rgba(0,0,0,0.7);
+    gap:30px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("la.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 10%;
+}
+
+.title{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#00f7ff;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.nav-links a{
+    margin: 0 18px;
+    text-decoration:none;
+    color:white;
+}
+.card{
+    background:#12131c;
+    padding:20px;
+    border-radius:15px;
+}
+
+/* IMAGES */
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* BUTTONS */
+.btn{
+    display:inline-block;
+    padding:10px 15px;
+    margin-top:10px;
+    border-radius:10px;
+    text-decoration:none;
+    background:#00f7ff;
+    color:black;
+    font-weight:bold;
+}
+
+/* CONTACT */
+.wa{background:#25D366;color:black;}
+.ig{background:#E1306C;color:white;}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div>
+        <span class="fresh">FRESH</span>
+        <span class="eye">EYE</span>
+    </div>
+
+   <div class="nav-links">
+    
+    <a href="#laser">Laser Tag</a>
+      
+    <a href="#hyper">Hyper Game</a>
+<a href="#vr">VR Games </a>
+    <a href="offers.html">🎉 BD Packages</a>
+    <a href="gallery.html">📸 Gallery</a>
+    <a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero"></div>
+
+<!-- VR -->
+<section id="vr">
+    <div class="title">🥽 VR GAMES</div>
+    <div class="grid">
+        <div class="card">VR Plank</div>
+        <div class="card">VR Roller Coaster</div>
+        <div class="card">VR Racing</div>
+        <div class="card">VR Ring</div>
+        <div class="card">VR Simulator</div>
+    </div>
+</section>
+
+<!-- LASER -->
+<section id="laser">
+    <div class="title">🔫 LASER TAG</div>
+    <div class="grid">
+        <div class="card">3 - 12 Players</div>
+        <div class="card">15 / 20 / 30 / 60 min</div>
+        <div class="card">Dark Arena Battles</div>
+    </div>
+</section>
+
+<!-- HYPER -->
+<section id="hyper">
+    <div class="title">⚡ HYPER GAME</div>
+    <div class="grid">
+        <div class="card">1 - 5 Players</div>
+        <div class="card">15 Minutes Challenge</div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <div class="title">🎬 Gallery</div>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="laser.jpeg">
+            <p>Laser Tag</p>
+        </div>
+
+        <div class="card">
+            <img src="hyper.jpeg">
+            <p>Hyper Game</p>
+        </div>
+
+        <div class="card">
+            <img src="hero.jpeg">
+            <p>VR Games</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="title">📞 CONTACT US</div>
+
+    <div class="card">
+        <p>📞 +962799070409</p>
+        <p>📧 Fresheye.amman@gmail.com</p>
+        <p>📸 Instagram: @fresheye_jo</p>
+        <p>🎵 TikTok: @fresheye_jo</p>
+
+        <a class="btn wa" href="https://wa.me/962799070409">WhatsApp</a>
+        <a class="btn ig" href="https://instagram.com/fresheye_jo">Instagram</a>
+    </div>
+</section>
+
+<!-- HOURS -->
+<section>
+    <div class="title">🕒 WORKING HOURS</div>
+
+    <div class="card">
+        <p>Saturday: 12 PM - 12 AM</p>
+        <p>Sunday - Friday: 2 PM - 12 AM</p>
+    </div>
+</section>
+
+<footer>
+    © Fresh Eye 2026
+</footer>
+
+</body>
+</html>
