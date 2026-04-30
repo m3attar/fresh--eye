@@ -106,6 +106,7 @@ section{
     color:#00f7ff;
 }
 
+/* GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -124,17 +125,17 @@ section{
     transform:scale(1.03);
 }
 
-.card img{
-    width:100%;
-    border-radius:10px;
-}
-
-/* VR TEXT */
-.desc{
+/* 🔥 INFO TEXT (NEW COLOR STYLE) */
+.info{
     margin-top:10px;
     font-size:14px;
-    color:#bdbdbd;
-    line-height:1.5;
+    line-height:1.8;
+
+    background: linear-gradient(90deg,#00f7ff,#b400ff,#00f7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight:bold;
 }
 
 /* BUTTONS */
@@ -227,27 +228,27 @@ footer{
 
         <div class="card">
             🎢 VR Roller Coaster
-            <div class="desc">Get a thrilling ride full of speed, drops and extreme motion experience.</div>
+            <div class="info">Get a thrilling ride full of speed, drops and extreme motion experience.</div>
         </div>
 
         <div class="card">
             🏁 VR Racing
-            <div class="desc">Get behind the wheels; challenge yourself, no speed limit!</div>
+            <div class="info">Get behind the wheels; challenge yourself, no speed limit!</div>
         </div>
 
         <div class="card">
             🪂 VR Plank Experience
-            <div class="desc">Walk in the sky from the 80th floor and feel the fear & excitement.</div>
+            <div class="info">Walk in the sky from the 80th floor and feel the fear & excitement.</div>
         </div>
 
         <div class="card">
             🎯 VR Ring
-            <div class="desc">Boxing, jumping mountains, shooting and action packed experience.</div>
+            <div class="info">Boxing, jumping mountains, shooting and action packed experience.</div>
         </div>
 
         <div class="card">
             🕶️ VR Simulator
-            <div class="desc">Experience immersive virtual reality worlds with action and adventure.</div>
+            <div class="info">Experience immersive virtual reality worlds with action and adventure.</div>
         </div>
 
     </div>
@@ -257,14 +258,22 @@ footer{
 <section id="laser">
     <div class="title">🔫 LASER TAG</div>
 
-    <div class="desc">
+    <div class="info">
         GATHER YOUR FRIENDS IN AN INDOOR LASER TAG MAZE AND LET THE BEST TEAM WIN!
     </div>
 
     <div class="grid">
-        <div class="card">3 - 12 Players</div>
-        <div class="card">15 / 20 / 30 / 60 min</div>
-        <div class="card">Dark Arena Battles</div>
+        <div class="card">
+            <div class="info">3 - 12 Players</div>
+        </div>
+
+        <div class="card">
+            <div class="info">15 / 20 / 30 / 60 min</div>
+        </div>
+
+        <div class="card">
+            <div class="info">Dark Arena Battles</div>
+        </div>
     </div>
 </section>
 
@@ -272,13 +281,18 @@ footer{
 <section id="hyper">
     <div class="title">⚡ HYPER GAME</div>
 
-    <div class="desc">
+    <div class="info">
         OUR HYPER GAMES ARE SURE TO CHALLENGE AND ENTERTAIN PLAYERS OF ALL AGES.
     </div>
 
     <div class="grid">
-        <div class="card">1 - 5 Players</div>
-        <div class="card">15 Minutes Challenge</div>
+        <div class="card">
+            <div class="info">1 - 5 Players</div>
+        </div>
+
+        <div class="card">
+            <div class="info">15 Minutes Challenge</div>
+        </div>
     </div>
 </section>
 
