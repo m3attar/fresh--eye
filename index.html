@@ -31,18 +31,32 @@ nav{
     z-index:1000;
 }
 
-/* LINKS */
-.nav-links{
+/* اللوجو */
+nav > div:first-child{
     display:flex;
-    flex-wrap:wrap;
+    align-items:center;
 }
 
+/* الروابط */
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+/* الروابط بدون مشاكل */
 .nav-links a{
-    margin:0 18px;
     text-decoration:none;
     color:white;
 }
 
+/* زر المنيو */
+.menu-btn{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+    color:white;
+}
 /* MENU BUTTON */
 .menu-btn{
     display:none;
