@@ -24,7 +24,7 @@ nav{
     width:100%;
     top:0;
     display:flex;
-    justify-content:space-between; /* مهم */
+    justify-content:space-between;
     align-items:center;
     padding:15px 20px;
     background:rgba(0,0,0,0.7);
@@ -34,7 +34,12 @@ nav{
 /* LINKS */
 .nav-links{
     display:flex;
-    gap:20px; /* بدل margin */
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
 }
 
 /* MENU BUTTON */
@@ -44,18 +49,13 @@ nav{
     cursor:pointer;
     color:white;
 }
+
 /* HERO */
 .hero{
     height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-
     background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("la.jpeg");
-
     background-size:cover;
     background-position:center;
 }
@@ -114,7 +114,7 @@ footer{
 @media (max-width:768px){
 
     .menu-btn{
-        display:block;  
+        display:block;
     }
 
     .nav-links{
@@ -138,7 +138,6 @@ footer{
         display:flex;
     }
 
-}
     .hero{
         height:60vh;
     }
@@ -226,15 +225,18 @@ footer{
 <!-- GALLERY -->
 <section id="gallery">
     <div class="title">🎬 Gallery</div>
+
     <div class="grid">
         <div class="card">
             <img src="laser.jpeg">
             <p>Laser Tag</p>
         </div>
+
         <div class="card">
             <img src="hyper.jpeg">
             <p>Hyper Game</p>
         </div>
+
         <div class="card">
             <img src="hero.jpeg">
             <p>VR Games</p>
@@ -245,6 +247,7 @@ footer{
 <!-- CONTACT -->
 <section id="contact">
     <div class="title">📞 CONTACT US</div>
+
     <div class="card">
         <p>📞 +962799070409</p>
         <p>📧 Fresheye.amman@gmail.com</p>
@@ -259,6 +262,7 @@ footer{
 <!-- HOURS -->
 <section>
     <div class="title">🕒 WORKING HOURS</div>
+
     <div class="card">
         <p>Saturday: 12 PM - 12 AM</p>
         <p>Sunday - Friday: 2 PM - 12 AM</p>
