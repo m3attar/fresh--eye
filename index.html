@@ -37,6 +37,11 @@ nav a{
     text-decoration:none;
 }
 
+/* NAV LINKS */
+.nav-links a{
+    margin: 0 18px;
+}
+
 /* HERO */
 .hero{
     height:100vh;
@@ -69,11 +74,7 @@ section{
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
-.nav-links a{
-    margin: 0 18px;
-    text-decoration:none;
-    color:white;
-}
+
 .card{
     background:#12131c;
     padding:20px;
@@ -108,6 +109,51 @@ footer{
     padding:30px;
     opacity:0.6;
 }
+
+/* 📱 MOBILE FIX */
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+        padding:10px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links a{
+        margin:5px;
+        font-size:14px;
+    }
+
+    .hero{
+        height:60vh;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    .title{
+        font-size:22px;
+        text-align:center;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        display:block;
+        margin:10px auto;
+        width:80%;
+        text-align:center;
+    }
+}
 </style>
 </head>
 
@@ -120,16 +166,14 @@ footer{
         <span class="eye">EYE</span>
     </div>
 
-   <div class="nav-links">
-    
-    <a href="#laser">Laser Tag</a>
-      
-    <a href="#hyper">Hyper Game</a>
-<a href="#vr">VR Games </a>
-    <a href="offers.html">🎉 BD Packages</a>
-    <a href="gallery.html">📸 Gallery</a>
-    <a href="#contact">Contact</a>
-</div>
+    <div class="nav-links">
+        <a href="#laser">Laser Tag</a>
+        <a href="#hyper">Hyper Game</a>
+        <a href="#vr">VR Games</a>
+        <a href="offers.html">🎉 BD Packages</a>
+        <a href="gallery.html">📸 Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
 <!-- HERO -->
@@ -171,9 +215,8 @@ footer{
     <div class="title">🎬 Gallery</div>
 
     <div class="grid">
-
         <div class="card">
-            <img src="laser.jpeg">
+            <img src="Laser.jpeg">
             <p>Laser Tag</p>
         </div>
 
@@ -186,7 +229,6 @@ footer{
             <img src="hero.jpeg">
             <p>VR Games</p>
         </div>
-
     </div>
 </section>
 
@@ -197,7 +239,7 @@ footer{
     <div class="card">
         <p>📞 +962799070409</p>
         <p>📧 Fresheye.amman@gmail.com</p>
-        <p>📸 Instagram: @fresheye_jo</p>
+      
         <p>🎵 TikTok: @fresheye_jo</p>
 
         <a class="btn wa" href="https://wa.me/962799070409">WhatsApp</a>
