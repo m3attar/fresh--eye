@@ -116,11 +116,25 @@ section{
     background:#12131c;
     padding:20px;
     border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    box-shadow:0 0 15px #00f7ff;
+    transform:scale(1.03);
 }
 
 .card img{
     width:100%;
     border-radius:10px;
+}
+
+/* VR TEXT */
+.desc{
+    margin-top:10px;
+    font-size:14px;
+    color:#bdbdbd;
+    line-height:1.5;
 }
 
 /* BUTTONS */
@@ -169,36 +183,8 @@ footer{
         gap:15px;
     }
 
-    .nav-links a{
-        font-size:18px;
-    }
-
     .nav-links.active{
         display:flex;
-    }
-
-    .hero{
-        height:60vh;
-    }
-
-    section{
-        padding:60px 5%;
-    }
-
-    .title{
-        font-size:22px;
-        text-align:center;
-    }
-
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    .btn{
-        display:block;
-        margin:10px auto;
-        width:80%;
-        text-align:center;
     }
 }
 </style>
@@ -206,7 +192,6 @@ footer{
 
 <body>
 
-<!-- 🔥 LOADER -->
 <div id="loader">
     <div class="logo">
         <span class="fresh">FRESH</span>
@@ -214,7 +199,6 @@ footer{
     </div>
 </div>
 
-<!-- NAV -->
 <nav>
     <div>
         <span class="fresh">FRESH</span>
@@ -233,24 +217,50 @@ footer{
     </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero"></div>
 
 <!-- VR -->
 <section id="vr">
     <div class="title">🥽 VR GAMES</div>
+
     <div class="grid">
-        <div class="card">VR Plank</div>
-        <div class="card">VR Roller Coaster</div>
-        <div class="card">VR Racing</div>
-        <div class="card">VR Ring</div>
-        <div class="card">VR Simulator</div>
+
+        <div class="card">
+            🎢 VR Roller Coaster
+            <div class="desc">Get a thrilling ride full of speed, drops and extreme motion experience.</div>
+        </div>
+
+        <div class="card">
+            🏁 VR Racing
+            <div class="desc">Get behind the wheels; challenge yourself, no speed limit!</div>
+        </div>
+
+        <div class="card">
+            🪂 VR Plank Experience
+            <div class="desc">Walk in the sky from the 80th floor and feel the fear & excitement.</div>
+        </div>
+
+        <div class="card">
+            🎯 VR Ring
+            <div class="desc">Boxing, jumping mountains, shooting and action packed experience.</div>
+        </div>
+
+        <div class="card">
+            🕶️ VR Simulator
+            <div class="desc">Experience immersive virtual reality worlds with action and adventure.</div>
+        </div>
+
     </div>
 </section>
 
 <!-- LASER -->
 <section id="laser">
     <div class="title">🔫 LASER TAG</div>
+
+    <div class="desc">
+        GATHER YOUR FRIENDS IN AN INDOOR LASER TAG MAZE AND LET THE BEST TEAM WIN!
+    </div>
+
     <div class="grid">
         <div class="card">3 - 12 Players</div>
         <div class="card">15 / 20 / 30 / 60 min</div>
@@ -261,31 +271,14 @@ footer{
 <!-- HYPER -->
 <section id="hyper">
     <div class="title">⚡ HYPER GAME</div>
+
+    <div class="desc">
+        OUR HYPER GAMES ARE SURE TO CHALLENGE AND ENTERTAIN PLAYERS OF ALL AGES.
+    </div>
+
     <div class="grid">
         <div class="card">1 - 5 Players</div>
         <div class="card">15 Minutes Challenge</div>
-    </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-    <div class="title">🎬 Gallery</div>
-
-    <div class="grid">
-        <div class="card">
-            <img src="Laser.jpeg">
-            <p>Laser Tag</p>
-        </div>
-
-        <div class="card">
-            <img src="hyper.jpeg">
-            <p>Hyper Game</p>
-        </div>
-
-        <div class="card">
-            <img src="hero.jpeg">
-            <p>VR Games</p>
-        </div>
     </div>
 </section>
 
@@ -298,8 +291,7 @@ footer{
         <p>📧 Fresheye.amman@gmail.com</p>
         <p>🎵 TikTok: @fresheye_jo</p>
 
-        <a class="btn" style="background:linear-gradient(45deg,#00f7ff,#b400ff); color:black;" 
-        href="https://maps.app.goo.gl/DizcxceYZZNGBhTTA" target="_blank">
+        <a class="btn" href="https://maps.app.goo.gl/DizcxceYZZNGBhTTA" target="_blank">
         📍 Our Location
         </a>
 
@@ -308,30 +300,12 @@ footer{
     </div>
 </section>
 
-<!-- HOURS -->
-<section>
-    <div class="title">🕒 WORKING HOURS</div>
+<footer>© Fresh Eye 2026</footer>
 
-    <div class="card">
-        <p>Saturday: 12 PM - 12 AM</p>
-        <p>Sunday - Friday: 2 PM - 12 AM</p>
-    </div>
-</section>
-
-<footer>
-    © Fresh Eye 2026
-</footer>
-
-<!-- JS -->
 <script>
 function toggleMenu(){
     document.getElementById("navLinks").classList.toggle("active");
 }
-
-/* hide loader */
-setTimeout(() => {
-    document.getElementById("loader").style.display = "none";
-}, 2000);
 </script>
 
 </body>
