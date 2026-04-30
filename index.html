@@ -24,22 +24,17 @@ nav{
     width:100%;
     top:0;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-between; /* مهم */
     align-items:center;
     padding:15px 20px;
     background:rgba(0,0,0,0.7);
     z-index:1000;
 }
 
-/* NAV LINKS */
+/* LINKS */
 .nav-links{
     display:flex;
-}
-
-.nav-links a{
-    margin:0 15px;
-    text-decoration:none;
-    color:white;
+    gap:20px; /* بدل margin */
 }
 
 /* MENU BUTTON */
@@ -47,8 +42,8 @@ nav{
     display:none;
     font-size:28px;
     cursor:pointer;
+    color:white;
 }
-
 /* HERO */
 .hero{
     height:100vh;
@@ -119,8 +114,7 @@ footer{
 @media (max-width:768px){
 
     .menu-btn{
-        display:block;
-        color:white;
+        display:block;  
     }
 
     .nav-links{
@@ -144,6 +138,7 @@ footer{
         display:flex;
     }
 
+}
     .hero{
         height:60vh;
     }
