@@ -134,6 +134,16 @@ nav{
 
 .hero-content{width:min(720px, 100%);}
 
+.hero-content::before{
+    background:linear-gradient(90deg, var(--cyan), var(--purple));
+    border-radius:999px;
+    content:"";
+    display:block;
+    height:4px;
+    margin-bottom:22px;
+    width:84px;
+}
+
 .eyebrow{
     color:var(--cyan);
     font-size:14px;
@@ -150,8 +160,12 @@ h1{
 }
 
 .hero p{
-    color:#eef2ff;
+    background:linear-gradient(90deg, #ffffff, var(--cyan), #ffffff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
     font-size:clamp(17px, 2.5vw, 22px);
+    font-weight:800;
     line-height:1.6;
     max-width:620px;
     margin:0 0 28px;
@@ -161,6 +175,34 @@ h1{
     display:flex;
     flex-wrap:wrap;
     gap:12px;
+}
+
+.quick-strip{
+    background:linear-gradient(90deg, rgba(0,247,255,0.12), rgba(180,0,255,0.13), rgba(0,247,255,0.12));
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    border-top:1px solid rgba(255,255,255,0.08);
+    display:grid;
+    gap:1px;
+    grid-template-columns:repeat(3, 1fr);
+}
+
+.quick-item{
+    align-items:center;
+    background:rgba(7,8,18,0.44);
+    display:flex;
+    justify-content:center;
+    min-height:82px;
+    padding:18px;
+    text-align:center;
+}
+
+.quick-item span{
+    background:linear-gradient(90deg, var(--cyan), var(--purple), var(--cyan));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-size:17px;
+    font-weight:900;
 }
 
 section{
@@ -186,15 +228,18 @@ section:nth-of-type(even){background:#0b0c16;}
 }
 
 .lead{
-    color:var(--muted);
+    background:linear-gradient(90deg, #ffffff, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
     font-size:16px;
+    font-weight:800;
     line-height:1.8;
     max-width:680px;
     margin:0 0 26px;
 }
 
 .details-list{
-    color:var(--muted);
     font-size:16px;
     font-weight:700;
     line-height:1.8;
@@ -202,7 +247,14 @@ section:nth-of-type(even){background:#0b0c16;}
     padding-left:22px;
 }
 
-.details-list li{margin-bottom:6px;}
+.details-list li{
+    background:linear-gradient(90deg, #ffffff, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    margin-bottom:6px;
+}
+
 .details-list li::marker{color:var(--cyan);}
 .details-list strong{font-weight:900;}
 
@@ -216,6 +268,18 @@ section:nth-of-type(even){background:#0b0c16;}
     background-clip:text;
     color:transparent;
     font-weight:900;
+}
+
+.section-kicker{
+    background:linear-gradient(90deg, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:1.6px;
+    margin:0 0 10px;
+    text-transform:uppercase;
 }
 
 .grid{
@@ -233,6 +297,16 @@ section:nth-of-type(even){background:#0b0c16;}
     transition:transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+.card::before{
+    background:linear-gradient(90deg, var(--cyan), var(--purple));
+    border-radius:999px;
+    content:"";
+    display:block;
+    height:3px;
+    margin-bottom:18px;
+    width:46px;
+}
+
 .card:hover{
     border-color:rgba(0,247,255,0.45);
     box-shadow:0 18px 45px rgba(0,247,255,0.12);
@@ -240,13 +314,20 @@ section:nth-of-type(even){background:#0b0c16;}
 }
 
 .card-title{
+    background:linear-gradient(90deg, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
     font-size:19px;
     font-weight:900;
     margin-bottom:12px;
 }
 
 .info{
-    color:var(--muted);
+    background:linear-gradient(90deg, #ffffff, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
     font-size:15px;
     font-weight:700;
     line-height:1.7;
@@ -267,6 +348,12 @@ section:nth-of-type(even){background:#0b0c16;}
     align-items:center;
 }
 
+.stat-card::before{
+    margin-bottom:0;
+    margin-right:16px;
+    width:34px;
+}
+
 .stat-card .info{
     background:linear-gradient(90deg, var(--cyan), var(--purple));
     -webkit-background-clip:text;
@@ -274,6 +361,37 @@ section:nth-of-type(even){background:#0b0c16;}
     color:transparent;
     font-size:18px;
     font-weight:900;
+}
+
+.hours-card{min-height:auto;}
+
+.hours-row{
+    align-items:center;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    display:flex;
+    gap:16px;
+    justify-content:space-between;
+    padding:14px 0;
+}
+
+.hours-row:first-child{padding-top:0;}
+.hours-row:last-child{border-bottom:0; padding-bottom:0;}
+
+.hours-row span:first-child{
+    background:linear-gradient(90deg, #ffffff, var(--cyan));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:900;
+}
+
+.hours-row span:last-child{
+    background:linear-gradient(90deg, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:900;
+    text-align:right;
 }
 
 .btn{
@@ -292,6 +410,16 @@ section:nth-of-type(even){background:#0b0c16;}
     transition:transform 0.2s ease, filter 0.2s ease;
 }
 
+.btn::before{
+    font-size:16px;
+    line-height:1;
+}
+
+.btn.location::before{content:"\1F4CD";}
+.btn.wa::before{content:"\260E";}
+.btn.ig::before{content:"\25CE";}
+.btn.tt::before{content:"\266A";}
+
 .btn:hover{
     filter:brightness(1.08);
     transform:translateY(-2px);
@@ -305,7 +433,37 @@ section:nth-of-type(even){background:#0b0c16;}
 
 .wa{background:var(--green); color:#041107;}
 .ig{background:var(--pink); color:white;}
-.tt{background:#ffffff; color:#05050b;}
+
+.tt{
+    background:linear-gradient(90deg, #ffffff, var(--cyan));
+    color:#05050b;
+}
+
+.floating-wa{
+    align-items:center;
+    background:var(--green);
+    border-radius:999px;
+    bottom:22px;
+    box-shadow:0 14px 35px rgba(37,211,102,0.28);
+    color:#041107;
+    display:inline-flex;
+    font-weight:900;
+    gap:8px;
+    min-height:52px;
+    padding:0 18px;
+    position:fixed;
+    right:22px;
+    text-decoration:none;
+    z-index:950;
+    transition:transform 0.2s ease, filter 0.2s ease;
+}
+
+.floating-wa:hover{
+    filter:brightness(1.06);
+    transform:translateY(-3px);
+}
+
+.floating-wa::before{content:"\260E";}
 
 .contact-card{min-height:auto;}
 
@@ -316,10 +474,22 @@ section:nth-of-type(even){background:#0b0c16;}
 }
 
 .contact-list p{
-    color:#eef2ff;
+    background:linear-gradient(90deg, #ffffff, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
     font-size:16px;
+    font-weight:800;
     line-height:1.5;
     margin:0;
+}
+
+.contact-list strong{
+    background:linear-gradient(90deg, var(--cyan), var(--purple));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:900;
 }
 
 .contact-actions{
@@ -330,7 +500,11 @@ section:nth-of-type(even){background:#0b0c16;}
 
 footer{
     border-top:1px solid rgba(255,255,255,0.08);
-    color:var(--muted);
+    background:linear-gradient(90deg, var(--cyan), var(--purple), var(--cyan));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:900;
     padding:28px;
     text-align:center;
 }
@@ -373,6 +547,8 @@ footer{
         text-align:left;
     }
 
+    .quick-strip{grid-template-columns:1fr;}
+    .quick-item{min-height:62px;}
     .section-head{display:block;}
     section{padding:70px 18px;}
     .card{min-height:auto;}
@@ -381,6 +557,22 @@ footer{
     .contact-actions{flex-direction:column;}
 
     .btn{width:100%;}
+
+    .hours-row{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:4px;
+    }
+
+    .hours-row span:last-child{text-align:left;}
+
+    .floating-wa{
+        bottom:14px;
+        left:14px;
+        min-height:50px;
+        right:14px;
+        justify-content:center;
+    }
 }
 
 @media (prefers-reduced-motion:reduce){
@@ -433,9 +625,18 @@ footer{
         </div>
     </header>
 
+    <div class="quick-strip" aria-label="Fresh Eye highlights">
+        <div class="quick-item"><span>VR Adventures</span></div>
+        <div class="quick-item"><span>Laser Battles</span></div>
+        <div class="quick-item"><span>Group Challenges</span></div>
+    </div>
+
     <section id="vr">
         <div class="section-head">
-            <h2 class="title">VR Games</h2>
+            <div>
+                <p class="section-kicker">Immersive zone</p>
+                <h2 class="title">VR Games</h2>
+            </div>
         </div>
         <p class="lead">Immersive virtual experiences with speed, action, racing and adventure for players who want something different.</p>
 
@@ -469,7 +670,10 @@ footer{
 
     <section id="laser">
         <div class="section-head">
-            <h2 class="title">Laser Tag</h2>
+            <div>
+                <p class="section-kicker">Team battle</p>
+                <h2 class="title">Laser Tag</h2>
+            </div>
         </div>
         <p class="lead">Gather your friends in an indoor laser tag maze and let the best team win.</p>
         <ul class="details-list">
@@ -491,7 +695,10 @@ footer{
 
     <section id="hyper">
         <div class="section-head">
-            <h2 class="title">Hyper Game</h2>
+            <div>
+                <p class="section-kicker">Fast challenge</p>
+                <h2 class="title">Hyper Game</h2>
+            </div>
         </div>
         <p class="lead">Fast, active challenges designed to entertain players of all ages.</p>
         <ul class="details-list">
@@ -508,19 +715,70 @@ footer{
         </div>
     </section>
 
+    <section id="why">
+        <div class="section-head">
+            <div>
+                <p class="section-kicker">Why visit?</p>
+                <h2 class="title">Why Fresh Eye?</h2>
+            </div>
+        </div>
+        <p class="lead">A fun indoor spot for friends, families, groups and anyone looking for an active experience in Amman.</p>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-title">Indoor Fun</div>
+                <p class="info">Enjoy exciting games in a comfortable indoor space.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Great For Groups</div>
+                <p class="info">VR, Laser Tag and Hyper Game options for friends, families and teams.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Easy Booking</div>
+                <p class="info">Contact us directly on WhatsApp and plan your visit quickly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hours">
+        <div class="section-head">
+            <div>
+                <p class="section-kicker">Plan your visit</p>
+                <h2 class="title">Opening Hours</h2>
+            </div>
+        </div>
+
+        <div class="card hours-card">
+            <div class="hours-row">
+                <span>Sunday - Friday</span>
+                <span>2:00 PM - 12:00 AM</span>
+            </div>
+
+            <div class="hours-row">
+                <span>Saturday</span>
+                <span>12:00 PM - 12:00 AM</span>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="section-head">
-            <h2 class="title">Contact Us</h2>
+            <div>
+                <p class="section-kicker">Book or ask</p>
+                <h2 class="title">Contact Us</h2>
+            </div>
         </div>
 
         <div class="card contact-card">
             <div class="contact-list">
-                <p>Phone: +962799070409</p>
-                <p>Email: Fresheye.amman@gmail.com</p>
+                <p><strong>Phone:</strong> +962799070409</p>
+                <p><strong>Email:</strong> Fresheye.amman@gmail.com</p>
             </div>
 
             <div class="contact-actions">
-                <a class="btn" href="https://maps.app.goo.gl/DizcxceYZZNGBhTTA" target="_blank" rel="noopener">Fresh Eye Location</a>
+                <a class="btn location" href="https://maps.app.goo.gl/DizcxceYZZNGBhTTA" target="_blank" rel="noopener">Fresh Eye Location</a>
                 <a class="btn wa" href="https://wa.me/962799070409" target="_blank" rel="noopener">WhatsApp</a>
                 <a class="btn ig" href="https://instagram.com/fresheye_jo" target="_blank" rel="noopener">Instagram</a>
                 <a class="btn tt" href="https://www.tiktok.com/@fresheye_jo" target="_blank" rel="noopener">TikTok</a>
@@ -528,6 +786,8 @@ footer{
         </div>
     </section>
 </main>
+
+<a class="floating-wa" href="https://wa.me/962799070409" target="_blank" rel="noopener">Book on WhatsApp</a>
 
 <footer>&copy; Fresh Eye 2026</footer>
 
